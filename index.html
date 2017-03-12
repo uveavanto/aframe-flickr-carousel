@@ -13,6 +13,8 @@
     <a-scene id="scene">
       <a-assets id="assets">
         <img id="skybox" src="images/sky_by_gawthrop.jpg"/>
+        <img id="floor" src="images/tulip-urban-colours.jpg"/>
+
       </a-assets>
       <!-- To generate an API key, visit: https://www.flickr.com/services/api/explore/flickr.photos.search -->
       <a-flickr-carousel search="hack"
@@ -51,7 +53,7 @@
       </a-entity>
       <a-sky src="#skybox" position="0 -1 0" rotation="0 45 0"></a-sky>
 
-      <a-entity position="0 0 0" rotation="-90 0 0" geometry="primitive: plane; width: 50; height: 50;" static-body material="src: #checkerboard; repeat: 20 20; transparent: true; color:skyblue;"></a-entity>
+      <a-entity position="0 0 0" rotation="-90 0 0" geometry="primitive: plane; width: 50; height: 50;" static-body material="src: #floor; repeat: 20 20; transparent: true; color:skyblue;"></a-entity>
 
 
       <a-light type="point" position="0 6 0" intensity="4"></a-light>
